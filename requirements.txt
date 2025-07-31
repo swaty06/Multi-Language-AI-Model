@@ -2,6 +2,6 @@ streamlit
 agno
 langdetect
 python-dotenv
-google-generativeai
+google-genai
 openai
 anthropic
