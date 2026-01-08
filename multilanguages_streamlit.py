@@ -88,7 +88,7 @@ def create_team(english_agent, german_agent):
     
     return Team(
         name="Multi Language Team",
-        mode="route",
+        #mode="route",
         model=Gemini(id="gemini-2.0-flash"),
         members=[english_agent, german_agent],
         show_tool_calls=True,
@@ -235,4 +235,5 @@ def main():
     st.markdown("*Powered by Agno Framework with Gemini 2.0 Flash*")
 
 if __name__ == "__main__":
+
     main()
