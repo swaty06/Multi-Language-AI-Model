@@ -59,7 +59,7 @@ def create_agents():
     english_agent = Agent(
         name="English Agent",
         role="Expert English language assistant",
-        model=Gemini(id="gemini-2.0-flash-exp"),
+        model=Gemini(id="gemini-2.0"),
         instructions=[
             "You must only respond in English.",
             "Provide helpful, accurate, and engaging responses.",
@@ -72,7 +72,7 @@ def create_agents():
     german_agent = Agent(
         name="German Agent",
         role="Experte für deutsche Sprache",
-        model=Gemini(id="gemini-2.0-flash-exp"),
+        model=Gemini(id="gemini-2.0"),
         instructions=[
             "Du musst nur auf Deutsch antworten.",
             "Gib hilfreiche, genaue und ansprechende Antworten.",
@@ -89,7 +89,7 @@ def create_team(english_agent, german_agent):
     
     return Team(
         name="Multi Language Team",
-        model=Gemini(id="gemini-2.0-flash-exp"),
+        model=Gemini(id="gemini-2.0"),
         members=[english_agent, german_agent],
         instructions=[
             "You are a smart language router for a multi-language AI system.",
@@ -252,3 +252,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
